@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Manrope", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: rgb(10, 38, 64);
+}
+nav .nav-fex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 56px 0 64px;
+}
+@media (max-width: 600px) {
+  nav .nav-fex {
+    display: block;
+  }
+}
+nav .nav-fex ul {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 40px;
+}
+@media (max-width: 600px) {
+  nav .nav-fex ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+nav .nav-fex ul li a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+}
+nav .nav-fex .nav-btn {
+  width: 128px;
+  height: 40px;
+}
+nav .nav-fex .nav-btn .nav-btn-link {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: rgb(10, 38, 64);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 8px 40px;
+  border-radius: 24px;
+}
+
+footer .box {
+  max-width: 1200px;
+  background-color: rgb(10, 38, 64);
+  padding: 72px 0;
+}
+footer .box h1 {
+  font-family: "Open Sans";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 716px;
+}
+@media (max-width: 800px) {
+  footer .box h1 {
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    color: rgb(255, 255, 255);
+  }
+}
+@media (max-width: 490px) {
+  footer .box h1 {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+  }
+}
+footer .box .btns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 50px;
+}
+@media (max-width: 490px) {
+  footer .box .btns {
+    display: block;
+    padding-left: 10px;
+  }
+}
+footer .box .btns .input {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(10, 38, 64);
+  display: flex;
+  padding: 12px 158px 12px 32px;
+  border: none;
+  border-radius: 240px;
+}
+@media (max-width: 800px) {
+  footer .box .btns .input {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(10, 38, 64);
+    display: flex;
+    padding: 5px 88px 5px 15px;
+  }
+}
+footer .box .btns button {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(10, 38, 64);
+  display: flex;
+  padding: 16px 56px;
+  background-color: rgb(101, 228, 163);
+  border: none;
+  border-radius: 240px;
+}
+@media (max-width: 800px) {
+  footer .box .btns button {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgb(10, 38, 64);
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 490px) {
+  footer .box .btns button {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+footer .box .btns button:hover {
+  cursor: pointer;
+}
+footer .table-flex {
+  display: flex;
+  padding: 100px 0 117px;
+  margin-top: 84px;
+  gap: 179px;
+}
+@media (max-width: 1200px) {
+  footer .table-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 660px) {
+  footer .table-flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 25px;
+  }
+}
+footer .table-flex p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(119, 119, 119);
+  max-width: 300px;
+  padding: 40px 0 64px;
+}
+@media (max-width: 660px) {
+  footer .table-flex p {
+    text-align: center;
+  }
+}
+footer .table-flex h5 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(119, 119, 119);
+}
+@media (max-width: 660px) {
+  footer .table-flex h5 {
+    text-align: center;
+  }
+}
+footer .table-flex .one h1 {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 660px) {
+  footer .table-flex .one h1 {
+    text-align: center;
+  }
+}
+footer .table-flex .one h2 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(119, 119, 119);
+  text-align: left;
+  padding-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 8px;
+}
+@media (max-width: 660px) {
+  footer .table-flex .one h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+footer .table-flex .one h2 span {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(10, 38, 64);
+  border-radius: 120px;
+  display: flex;
+  padding: 1px 14px;
+  background-color: rgb(101, 228, 163);
+}

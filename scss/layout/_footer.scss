@@ -1,0 +1,16 @@
+@use "../utils/variables";
+@use "../utils/mixin";
+
+footer {
+  .box {
+    max-width: 1200px;
+    background-color: var.$bg-color;
+    h1 {
+      @include mxn.family("Open Sans", 48x, 400, 72px, var.$text-color);
+      text-align: center;
+      max-width: 716px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}

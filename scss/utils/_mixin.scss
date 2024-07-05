@@ -1,0 +1,14 @@
+@mixin flex($align, $justify, $gap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin family( $family, $size, $weight, $line, $color,) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+  color: $color;
+}
