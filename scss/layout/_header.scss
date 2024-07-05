@@ -1,5 +1,6 @@
 @use "../utils/variables" as var;
 @use "../utils/mixin" as mxn;
+
 nav {
   background-color: var.$bg-color;
   .nav-fex {
